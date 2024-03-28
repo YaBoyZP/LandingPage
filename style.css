@@ -4,32 +4,68 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    
 }
-
-.header {
+img {
+    flex-shrink: 0;
+}
+.pagecontainer {
+    display: flex;
+    flex-direction: column;
+    
+}
+.header div {
     background-color: #1F2937;
     color: white;
     display: flex;
     flex: 1;
     justify-content: space-between;
-}
-
-.header .headertitle {
-    display: flex;
-    padding: 8px;
-    justify-content: space-between;
     align-items: center;
-    font-size: 24px;
+    padding-left: 8px;
+    padding-bottom: 24px;
+    flex: 1 1 auto;
+    flex-shrink: 0;
+}
+.header ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    padding-right: 8px;
 }
 .header .headertitle .headerlinks ul li{
     display: flex;
     justify-content: space-between;
 }
 
-ul {
-    text-decoration: none;
-    list-style: none;
+.lheader {
+    background-color: #1F2936;
+    color: white;
     display: flex;
-    gap: 8px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+    padding-bottom: 50px;
+    
+    min-width: 150px;
+}
+.lheadertitle {
+    display: flex;
+    padding-left: 0px;
+    padding-right: 8px;
+    font-weight: bolder;
+}
+.lheadertitlesubtext {
     font-size: 12px;
+    padding-right: 8px;
+    min-width: 100px;
+}
+button.lheaderbutton {
+    cursor: pointer;
+    padding: 8px 16px;
+    margin-top: 25px;
+    border-radius: 8px;
+    background-color: #3882F6;
+    border-color: black;
 }
